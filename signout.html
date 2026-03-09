@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParkEase_Vehicle Sign Out</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Main wrapper for vehicle sign-out page -->
+    <div class="form">
+
+        <!-- Company logo -->
+        <img src="parkease_logo.png" alt="ParkEase Logo" class="logo">
+
+        <!-- Page title -->
+        <h2>Vehicle Sign-Out</h2>
+
+        <!-- Sign-out form -->
+        <form>
+
+            <!-- Receipt verification section -->
+            <div class="section">
+                <h3>Receipt Verification</h3>
+
+                <!-- Receipt number input -->
+                <input type="text" id="receipt_number" name="receipt_number" placeholder="Enter Receipt Number" required>
+
+                <!-- Vehicle number plate input -->
+                <input type="text" id="number_plate" name="number_plate" placeholder="Enter Vehicle Number Plate" required>
+
+                <!-- Vehicle type selection -->
+                <label for="vehicle_type">Select Vehicle Type</label>
+                <select id="vehicle_type" name="vehicle_type" required>
+                    <option value="">-- Select Vehicle Type --</option>
+                    <option value="truck">Truck</option>
+                    <option value="personal_car">Personal Car</option>
+                    <option value="taxi">Taxi</option>
+                    <option value="coaster">Coaster</option>
+                    <option value="boda_boda">Boda-Boda</option>
+                </select>
+            </div>
+
+            <!-- Receiver details section -->
+            <div class="section">
+                <h3>Receiver Details</h3>
+
+                <!-- Receiver name input -->
+                <input type="text" id="receiver_name" name="receiver_name" placeholder="Enter Receiver Name" required>
+
+                <!-- Receiver phone number -->
+                <input type="text" id="receiver_phone" name="receiver_phone" placeholder="Enter Phone Number" required>
+
+                <!-- Gender selection -->
+                <label for="gender">Select Gender</label>
+                <select id="gender" name="gender" required>
+                    <option value="">-- Select Gender --</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+
+                <!-- Receiver NIN -->
+                <input type="text" id="receiver_nin" name="receiver_nin" placeholder="Enter NIN Number" required>
+            </div>
+
+            <!-- Sign-out date and time section -->
+            <div class="section">
+                <h3>Sign-Out Time</h3>
+
+                <!-- Date and time row -->
+                <div class="date-time-row">
+
+                    <!-- Sign-out date -->
+                    <div>
+                        <label for="signout_date">Date</label>
+                        <input type="date" id="signout_date" name="signout_date" required>
+                    </div>
+
+                    <!-- Sign-out time -->
+                    <div>
+                        <label for="signout_time">Time</label>
+                        <input type="time" id="signout_time" name="signout_time" required>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Submit button -->
+            <div class="section">
+                <button type="submit" class="btn">Confirm Sign-Out</button>
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+</html>

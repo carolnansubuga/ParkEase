@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParkEase_Tyre Clinic</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Main wrapper for tyre clinic page -->
+    <div class="form">
+
+        <!-- Company logo -->
+        <img src="parkease_logo.png" alt="ParkEase Logo" class="logo">
+
+        <!-- Page title -->
+        <h2>Tyre Clinic Management</h2>
+
+        <!-- Tyre clinic service form -->
+        <form>
+
+            <!-- Service type selection -->
+            <div class="section">
+                <label for="service_type">Service Type</label>
+                <select id="service_type" name="service_type" required>
+                    <option value="pressure">Pressure - UGX 500</option>
+                    <option value="puncture">Puncture Fixing - UGX 5,000</option>
+                    <option value="valve">Valve Replacement - UGX 5,000</option>
+                </select>
+            </div>
+
+            <!-- Tyre size input -->
+            <div class="section">
+                <label for="tyre_size">Tyre Size</label>
+                <input type="text" id="tyre_size" name="tyre_size" required>
+            </div>
+
+            <!-- Vehicle number plate input -->
+            <div class="section">
+                <label for="number_plate">Vehicle Number Plate</label>
+                <input type="text" id="number_plate" name="number_plate" required>
+            </div>
+
+            <!-- Submit button -->
+            <div class="section">
+                <button type="submit" class="btn">Record Service</button>
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

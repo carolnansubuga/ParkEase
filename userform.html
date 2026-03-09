@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParkEase_User Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Main wrapper for user registration page -->
+    <div class="form">
+
+        <!-- Company logo -->
+        <img src="parkease_logo.png" alt="ParkEase Logo" class="logo">
+
+        <!-- Page title -->
+        <h1>Register with ParkEase</h1>
+
+        <!-- Page subtitle -->
+        <p>Create Work Account</p>
+
+        <!-- User registration form -->
+        <form>
+
+            <!-- User information section -->
+            <div class="section">
+
+                <!-- First name input -->
+                <input type="text" id="first_name" name="first_name" placeholder="Enter Firstname" required>
+
+                <!-- Last name input -->
+                <input type="text" id="last_name" name="last_name" placeholder="Enter Lastname" required>
+
+                <!-- Other name input -->
+                <input type="text" id="other_name" name="other_name" placeholder="Enter Othername">
+
+                <!-- Email input -->
+                <input type="email" id="email" name="email" placeholder="Enter Email" required>
+
+                <!-- Phone number input -->
+                <input type="text" id="phone_number" name="phone_number" placeholder="Enter Phone Number" required>
+
+                <!-- Date of birth input -->
+                <input type="date" id="date_of_birth" name="date_of_birth" required>
+
+                <!-- Username input -->
+                <input type="text" id="username" name="username" placeholder="Create Desired Username" required>
+
+                <!-- Role selection -->
+                <label for="role">Select Role</label>
+                <select id="role" name="role" required>
+                    <option value="">-- Select Role --</option>
+                    <option value="attendant">Parking Attendant</option>
+                    <option value="tyre_manager">Tyre Clinic Manager</option>
+                    <option value="battery_manager">Battery Manager</option>
+                    <option value="admin">System Admin</option>
+                </select>
+
+                <!-- Password input -->
+                <input type="password" id="password" name="password" placeholder="Create Strong Password" required>
+
+                <!-- Password instruction -->
+                <p>
+                    Password must have at least 8 characters including letters, numbers and symbols.
+                </p>
+
+            </div>
+
+            <!-- Submit button -->
+            <div class="section">
+                <button type="submit" class="btn">Submit</button>
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+</html>

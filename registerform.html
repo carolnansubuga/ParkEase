@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParkEase_Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Main wrapper for registration page -->
+    <div class="form">
+
+        <!-- Company logo -->
+        <img src="parkease_logo.png" alt="ParkEase Logo" class="logo">
+
+        <!-- Page title -->
+        <h1>Vehicle Registration</h1>
+
+        <!-- Registration form -->
+        <form>
+
+            <!-- Driver details section -->
+            <div class="section">
+                <h3>Driver Details</h3>
+
+                <!-- Driver name input -->
+                <input type="text" id="driver_name" name="driver_name" placeholder="Enter Name" required>
+
+                <!-- Phone number input -->
+                <input type="text" id="phone_number" name="phone_number" placeholder="Enter Phone Number" required>
+
+                <!-- NIN input -->
+                <input type="text" id="nin" name="nin" placeholder="Enter NIN" required>
+            </div>
+
+            <!-- Vehicle details section -->
+            <div class="section">
+                <h3>Vehicle Details</h3>
+
+                <!-- Vehicle type selection -->
+                <label for="vehicle_type">Select Vehicle Type</label>
+                <select id="vehicle_type" name="vehicle_type" required>
+                    <option value="">-- Select Vehicle Type --</option>
+                    <option value="truck">Truck</option>
+                    <option value="personal_car">Personal Car</option>
+                    <option value="taxi">Taxi</option>
+                    <option value="coaster">Coaster</option>
+                    <option value="boda_boda">Boda-Boda</option>
+                </select>
+
+                <!-- Number plate input -->
+                <input type="text" id="number_plate" name="number_plate" placeholder="Enter Number Plate" required>
+
+                <!-- Vehicle model input -->
+                <input type="text" id="vehicle_model" name="vehicle_model" placeholder="Enter Vehicle Model" required>
+
+                <!-- Vehicle color input -->
+                <input type="text" id="vehicle_color" name="vehicle_color" placeholder="Enter Vehicle Color" required>
+            </div>
+
+            <!-- Arrival details section -->
+            <div class="section">
+                <h3>Arrival Details</h3>
+
+                <!-- Date and time row -->
+                <div class="date-time-row">
+
+                    <!-- Arrival time input -->
+                    <div>
+                        <label for="arrival_time">Time</label>
+                        <input type="time" id="arrival_time" name="arrival_time" required>
+                    </div>
+
+                    <!-- Arrival date input -->
+                    <div>
+                        <label for="arrival_date">Date</label>
+                        <input type="date" id="arrival_date" name="arrival_date" required>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Submit button -->
+            <div class="section">
+                <button type="submit" class="btn">Register Vehicle</button>
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

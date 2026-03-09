@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ParkEase Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="dashboard-container">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+
+        <img src="parkease_logo.png" class="logo">
+        <h3>ParkEase</h3>
+
+        <a href="registerform.html" target="content-frame" onclick="setActive(this)">Register Vehicle</a>
+        <a href="signout.html" target="content-frame" onclick="setActive(this)">Vehicle Sign Out</a>
+        <a href="tyre.html" target="content-frame" onclick="setActive(this)">Tyre Clinic</a>
+        <a href="battery.html" target="content-frame" onclick="setActive(this)">Battery Services</a>
+        <a href="payment.html" target="content-frame" onclick="setActive(this)">Payment</a>
+        <a href="report.html" target="content-frame" onclick="setActive(this)">Daily Report</a>
+
+        <a href="login.html" class="logout">Logout</a>
+
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="main-content">
+
+        <!-- Top header -->
+        <div class="topbar">
+            <h2>Admin Dashboard</h2>
+            <span>Welcome, Admin</span>
+        </div>
+
+        <!-- Iframe Content -->
+        <div class="content">
+            <iframe name="content-frame" src="register_vehicle.html"></iframe>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+    function setActive(link) {
+        const links = document.querySelectorAll('.sidebar a');
+        links.forEach(l => l.classList.remove('active'));
+        link.classList.add('active');
+    }
+</script>
+
+</body>
+</html>
