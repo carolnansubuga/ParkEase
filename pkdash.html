@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>ParkEase Dashboard</title>
+<link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+ 
+<img class="logo" src="parkease_logo.png" alt="Parkease logo">
+
+<ul class="nav-links">
+<li class="active">Dashboard</li>
+<li>Reports</li>
+<li>Settings</li>
+</ul>
+
+<div class="user-info">
+<p>Logged in as</p>
+<h4>Nansubuga Carol</h4>
+</div>
+
+</div>
+
+
+<!-- MAIN CONTENT -->
+<div class="main">
+
+<!-- TOP BAR -->
+<div class="topbar">
+
+<input type="text" placeholder="Search vehicle or plate number">
+
+<div class="top-right">
+
+<span class="shift">Shift: 08:00AM - 05:00PM</span>
+
+<span class="bell">🔔</span>
+
+</div>
+
+</div>
+
+
+<!-- STATS -->
+<div class="stats">
+
+<div class="card">
+<h3>Total Vehicles Parked</h3>
+<p class="big">48</p>
+</div>
+
+<div class="card">
+<h3>Today's Revenue (UGX)</h3>
+<p class="big">1,250,000</p>
+</div>
+
+<div class="card">
+<h3>Available Parking Slots</h3>
+<p class="big">12</p>
+
+<div class="progress">
+<div class="progress-bar"></div>
+</div>
+
+<p class="percent">80% Occupied</p>
+
+</div>
+
+</div>
+
+
+<!-- QUICK ACTIONS -->
+
+<div class="quick-actions">
+
+<h2>Quick Actions</h2>
+
+<div class="actions">
+
+<a href="registerform.html"class="btn arrival">Register Arrival</a>
+
+<a href="signout.html"><button class="btn signout">Vehicle Sign-out</button></a>
+
+<button class="btn print">Print Daily Summary</button>
+
+</div>
+
+</div>
+
+
+
+<!-- RECENT ARRIVALS TABLE -->
+
+<div class="table-section">
+
+<h2>Recent Arrivals</h2>
+
+<table>
+
+<thead>
+
+<tr>
+<th>Time</th>
+<th>Plate Number</th>
+<th>Vehicle Type</th>
+<th>Status</th>
+<th>Actions</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+<td>09:15</td>
+<td>UBA 324K</td>
+<td>Sedan</td>
+<td><span class="badge parked">Parked</span></td>
+<td>⋮</td>
+</tr>
+
+<tr>
+<td>09:32</td>
+<td>UBG 112T</td>
+<td>Motorcycle</td>
+<td><span class="badge signed">Signed Out</span></td>
+<td>⋮</td>
+</tr>
+
+<tr>
+<td>10:02</td>
+<td>UBJ 451D</td>
+<td>SUV</td>
+<td><span class="badge parked">Parked</span></td>
+<td>⋮</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+
+</div>
+</div>
+
+</body>
+</html>
